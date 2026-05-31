@@ -25,12 +25,3 @@ def split_nodes_delimiter(old_nodes: list[TextNode], delimiter: str, text_type: 
 
     return new_nodes
 
-
-sample_nodes = [
-    TextNode("This is text with a `code block` word", TextType.TEXT),
-    TextNode("This is a text with **booled phrase**", TextType.TEXT),
-    TextNode("This is a text with a __italic phrase__", TextType.TEXT),
-]
-
-print(split_nodes_delimiter(sample_nodes, "`", TextType.CODE))
-
